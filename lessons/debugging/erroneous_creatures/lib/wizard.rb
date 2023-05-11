@@ -4,12 +4,12 @@ class Wizard
   attr_accessor :bearded
 
   def initialize(name, bearded = {bearded: true})
-    @name = name
+    @name    = name
     @bearded = bearded
   end
 
   def bearded?
-    @bearded
+    @bearded[:bearded]
   end
 
   def incantation(x)

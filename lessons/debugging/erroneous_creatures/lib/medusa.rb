@@ -4,13 +4,13 @@ class Medusa
   attr_accessor :statues
 
   def initialize(name)
-    @name = name
+    @name    = name
     @statues = []
   end
 
   def stare(x)
     x.stone = true
-    @statues = x
+    @statues << x
   end
 
   def statues
@@ -25,7 +25,7 @@ class Person
   attr_accessor :stone
 
   def initialize(name)
-    @name = name
+    @name  = name
     @stone = false
   end
 
